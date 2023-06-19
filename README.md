@@ -121,7 +121,7 @@ The project aims to incorporate a cohesive theme inspired by the company's brand
 ### *Wireframes*
 Below are the wireframes for all pages created for the project using Balsamiq. These wireframes are initial concepts forhow the project will be structured across different devices.
 
-- #### Home Page - [View](#)
+- #### Home Page - [View](https://github.com/edchalk96/tails-of-valhalla/tree/main/documentation/wireframes/home-page-wireframe.pdf)
 - #### Book Page - [View](#)
 - #### Gallery Page - [View](#)
 - #### Blogs Page - [View](#)
