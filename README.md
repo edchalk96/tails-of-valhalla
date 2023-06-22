@@ -4,10 +4,20 @@
 
 [View the live project here.](#)
 
-[View the repository here](#)
+[View the repository here](https://github.com/edchalk96/tails-of-valhalla)
 
 ## Table of Contents:
 1. [About the website](#about-the-website)
+2. [User Experience (UX) | The 5 Planes](#user-experience-ux--the-5-planes)
+    1. [Strategy Plane](#strategy-plane)
+    2. [Scope Plane](#scope-plane)
+    3. [Structure PLane](#structure-plane)
+    4. [Skeleton Plane](#skeleton-plane)
+    5. [Surface PLane](#surface-plane)
+3. [Technologies Used](#technologies-used)
+4. [Testing](#testing)
+5. [Deployment](#deployment)
+6. [Credits](#credits)
 
 ---
 
@@ -121,11 +131,13 @@ The project aims to incorporate a cohesive theme inspired by the company's brand
 ### *Wireframes*
 Below are the wireframes for all pages created for the project using Balsamiq. These wireframes are initial concepts forhow the project will be structured across different devices.
 
-- #### Home Page - [View](https://github.com/edchalk96/tails-of-valhalla/tree/main/documentation/wireframes/home-page-wireframe.pdf)
-- #### Book Page - [View](#)
-- #### Gallery Page - [View](#)
-- #### Blogs Page - [View](#)
-- #### Contact Us Page - [View](#)
+- #### Home Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/home-page.pdf)
+- #### Book Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/book-page.pdf)
+- #### Gallery Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/gallery-page.pdf)
+- #### Blogs Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/blogs-page.pdf)
+- #### Contact Us Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/contact-us-page.pdf)
+- #### Example Blog Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/example-blog-page.pdf)
+- #### Thank You Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/thank-you-page.pdf)
 
 As these wire frames were an initial conceptualisation of the project, some aspects were required to be altered during development. The below list are differences seen between the wireframe and project:
  - Text here
