@@ -7,21 +7,24 @@ body {
     background-color: #2E3440;
 }
 
-header {
+.navbar-bg {
     background-color: #ECEFF4;
 }
 
 /* ------------------------------Header---------*/
-.navbar-position {
-    padding-left: 0px;
+
+/* Navbar */
+.navbar {
+    padding-bottom: 0;
 }
 
-.img-with-text {
-    text-align: justify;
-    width: 75px;
-}
+@media (min-width: 992px) {
+    .navbar .navbar-nav {
+        float: none;
+        vertical-align: top;
+    }
 
-.img-with-text img {
-    display: block;
-    margin: 0 auto;
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
 }
