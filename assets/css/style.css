@@ -1,5 +1,6 @@
 body {
     font-family: 'Skranji', cursive, sans-serif;
+    color: #ECEFF4;
 }
 
 /* ------------------------------Colours---------*/
@@ -7,24 +8,71 @@ body {
     background-color: #2E3440;
 }
 
-.navbar-bg {
+header {
     background-color: #ECEFF4;
+    color: #2E3440;
 }
 
-/* ------------------------------Header---------*/
+.navbar-brand p {
+    color: #2E3440;
+}
 
-/* Navbar */
+footer {
+    background-color: #ECEFF4;
+    color: #2E3440;
+}
+/* ------------------------------Header---------*/
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
 .navbar {
     padding-bottom: 0;
 }
 
-@media (min-width: 992px) {
-    .navbar .navbar-nav {
-        float: none;
-        vertical-align: top;
-    }
+/* ------------------------------Footer---------*/
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    border-top-left-radius:8px;
+    border-top-right-radius:8px;
+}
 
-    .navbar .navbar-collapse {
-        text-align: center;
-    }
+.footer-sections {
+    margin-top: 20px;
+}
+
+footer a {
+    color: #2E3440;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #DAA21C;
+    text-decoration: underline;
+}
+
+footer i {
+    font-size: 25px;
+}
+
+footer i:hover {
+    color:#DAA21C;
+    font-size: 30px;
+}
+
+.footer-info {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+#copyright-info {
+    font-size: 10px;
 }
