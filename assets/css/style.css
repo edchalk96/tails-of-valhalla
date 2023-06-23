@@ -1,0 +1,27 @@
+body {
+    font-family: 'Skranji', cursive, sans-serif;
+}
+
+/* ------------------------------Colours---------*/
+body {
+    background-color: #2E3440;
+}
+
+header {
+    background-color: #ECEFF4;
+}
+
+/* ------------------------------Header---------*/
+.navbar-position {
+    padding-left: 0px;
+}
+
+.img-with-text {
+    text-align: justify;
+    width: 75px;
+}
+
+.img-with-text img {
+    display: block;
+    margin: 0 auto;
+}
