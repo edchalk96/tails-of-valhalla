@@ -220,23 +220,31 @@ Text here
 
 ## Deployment
 
-### GitHub
-Text here
-1. Text here
-2. Text here
-3. Text here
+### GitHub Pages
+This project is deployed using GitHub pages, achieved by the following steps:
+
+1. Log in to GitHub and locate the relevant [GitHub repository](https://github.com/edchalk96/tails-of-valhalla)
+2. Locate and click on the *Settings* link at the end of the horizontal menu, located at the top of the repository page.
+3. Locate and click on the *Pages* link on the left-hand side of the *Settings* page.
+4. In the *Build and deployment* section, under *Branch* click on *None* to reveal a dropdown menu and select *main*.
+5. Click *save* and refresh the page.
+6. Locate the now live site [link](https://edchalk96.github.io/tails-of-valhalla/) at the top of the *GitHub Pages* page.
 
 ### Forking the GitHub Repository
-Text here
-1. Text here
-2. Text here
-3. Text here
+Forking the GitHub repository allows you to make a copy of he original repository to view and/or make changes without afeecting the original repository. The following steps will fork your GitHub repository:
+1. Log in to GitHub and locate the relevant [GitHub repository](https://github.com/edchalk96/tails-of-valhalla)
+2. At the top of the **repository page**, south-east of *Settings*, locate the *Fork* button and click.
+3. This will now have created a copy of the oringial repository in your GitHub account.
 
 ### Making a Local Clone
 Text here
-1. Text here
-2. Text here
-3. Text here
+1. Log in to GitHub and locate the relevant [GitHub repository](https://github.com/edchalk96/tails-of-valhalla)
+2. Under the repository name, to the right, click on the green **<> Code** dropdown button.
+3. To clone the repository using HTTPS, copy the URL by clicking the *copy to clipboard* icon or alternatively hightlight the URL, right click and copy.
+4. Open GitBash
+5. Change the working directory to the location where you would like the clines directory to be located.
+6. Type 'git clone' and paste the copied URL from step 3.
+7. Press enter and your local clone will be created in the selected location.
 
 ---
 

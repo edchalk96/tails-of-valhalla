@@ -9,23 +9,40 @@ body {
 }
 
 header {
+    color: #;
+}
+
+.navbar-bg {
     background-color: #ECEFF4;
+}
+
+.nav-link {
     color: #2E3440;
+}
+
+.navbar-brand {
+    margin-right: 0;
+    padding: 0;
 }
 
 .navbar-brand p {
     color: #2E3440;
+    font-weight: 700;
+    margin-bottom: 0;
+    font-size: 12px;
 }
 
 footer {
     background-color: #ECEFF4;
     color: #2E3440;
 }
-/* ------------------------------Header---------*/
+/* ------------------------------Start of Header styling---------*/
 header {
     position: fixed;
     width: 100%;
     top: 0;
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius:8px;
 }
 
 .navbar {
@@ -43,12 +60,19 @@ header {
     color: #DAA21C;
 }
 
-/*Navbar "Book" button styling*/
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #DAA21C;
+    text-decoration:underline;
+    text-decoration-thickness: 2px;
+  }
+
+/*---Navbar "Book" button styling---*/
 nav .btn {
     background-color: #2E3440;
     color: #ECEFF4;
 }
 
+/*Credit to W3Schools: Zoom hover styling code taken from https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
 nav .btn:hover {
     color: #DAA21C;
     background-color: #2E3440;
@@ -56,11 +80,12 @@ nav .btn:hover {
     transition: transform .2s;
 }
 
-  /*Navbar collapsible navigation styling*/
+/*---Navbar collapsible navigation styling---*/
+/*Credit to stackoverflow: Adapted from https://stackoverflow.com/questions/64301832/navbar-toggle-direction-in-bootstrap*/
 @media screen and (max-width:992px) {
     .navbar-collapse {
     position: fixed;
-    top: 120px;
+    top: 70px;
     padding-left: 20px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -83,13 +108,44 @@ nav .btn:hover {
     color: #DAA21C;
   }
   .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #ECEFF4;
+    color: #DAA21C;
+    text-decoration:underline;
+    text-decoration-thickness: 3px;
   }
 }
+/* ------------------------------End of Header styling---------*/
 
-/* ------------------------------Footer---------*/
+/* ------------------------------Start of hero image styling---------*/
+.hero-image-container {
+    height: 100vh;
+    max-width: 100%;
+    background: url(../images/hero-image7.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Credit to Code Institute for the hero image overlay: Taken from the "Whiskey Drop" course material*/
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------End of hero image styling---------*/
+
+/* ------------------------------Start of Footer styling---------*/
 footer {
-    position: fixed;
     width: 100%;
     bottom: 0;
     border-top-left-radius:8px;
@@ -132,6 +188,11 @@ footer i:hover {
     font-size: 10px;
 }
 
+#copyright-info p {
+    margin-bottom: 1px;
+}
+
 .col-sm-3 {
     margin-top: 10px;
 }
+/* ------------------------------End of Footer styling---------*/
