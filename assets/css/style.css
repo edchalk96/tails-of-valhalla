@@ -3,13 +3,12 @@ body {
     color: #ECEFF4;
 }
 
+h1 {
+    font-weight: 700;
+}
 /* ------------------------------Colours---------*/
 body {
     background-color: #2E3440;
-}
-
-header {
-    color: #;
 }
 
 .navbar-bg {
@@ -43,6 +42,7 @@ header {
     top: 0;
     border-bottom-left-radius:8px;
     border-bottom-right-radius:8px;
+    z-index: 1;
 }
 
 .navbar {
@@ -140,6 +140,10 @@ nav .btn:hover {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-image-content {
+    z-index: 1;
 }
 
 /* ------------------------------End of hero image styling---------*/
