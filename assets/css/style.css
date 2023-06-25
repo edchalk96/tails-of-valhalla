@@ -85,10 +85,7 @@ nav .btn:hover {
 @media screen and (max-width:992px) {
     .navbar-collapse {
     position: fixed;
-    top: 70px;
-    padding-left: 20px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    top: 65px;
   }
   .navbar-collapse.collapsing {
     left: -75%;
@@ -102,15 +99,21 @@ nav .btn:hover {
     transition: 500ms ease-in-out;
   }
   .nav-link {
-    color: #ECEFF4;
+    color: #2E3440;
+    padding-bottom: 0;
+    padding-left: 15px;
   }
   .nav-link:hover {
-    color: #DAA21C;
+    color: #ECEFF4;
   }
   .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #DAA21C;
+    color: #2E3440;
     text-decoration:underline;
     text-decoration-thickness: 3px;
+  }
+  .nav-item {
+    background-color: rgb(236, 239, 244, 0.4);
+    width: 100vw;
   }
 }
 /* ------------------------------End of Header styling---------*/
@@ -139,11 +142,13 @@ nav .btn:hover {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .hero-image-content {
     z-index: 1;
+    color: #ECEFF4;
+    text-shadow: 2px 2px 5px #2E3440, 0 0 25px #ECEFF4, 0 0 5px #ECEFF4;
 }
 
 /* ------------------------------End of hero image styling---------*/
