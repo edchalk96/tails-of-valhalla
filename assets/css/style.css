@@ -42,7 +42,7 @@ header {
     top: 0;
     border-bottom-left-radius:8px;
     border-bottom-right-radius:8px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar {
@@ -67,17 +67,19 @@ header {
   }
 
 /*---Navbar "Book" button styling---*/
-nav .btn {
+.book-btn {
     background-color: #2E3440;
     color: #ECEFF4;
+    text-shadow: none;
 }
 
 /*Credit to W3Schools: Zoom hover styling code taken from https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
-nav .btn:hover {
+.btn:hover {
     color: #DAA21C;
     background-color: #2E3440;
     transform: scale(1.25);
     transition: transform .2s;
+    text-shadow: none;
 }
 
 /*---Navbar collapsible navigation styling---*/
@@ -143,12 +145,31 @@ nav .btn:hover {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 
 .hero-image-content {
     z-index: 1;
     color: #ECEFF4;
     text-shadow: 2px 2px 5px #2E3440, 0 0 25px #ECEFF4, 0 0 5px #ECEFF4;
+}
+
+.hero-image-content .book-btn {
+    position: absolute;
+    bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: fit-content;
+
+    background-color: rgb(236, 239, 244, 0.75);
+    color: #2E3440;
+    font-size: 2.5vw;
 }
 
 /* ------------------------------End of hero image styling---------*/
