@@ -1,11 +1,20 @@
+/* ------------------------------General styling---------*/
 body {
     font-family: 'Skranji', cursive, sans-serif;
     color: #ECEFF4;
 }
 
-h1 {
+.page-headings {
     font-weight: 700;
 }
+
+hr {
+    border-top: 4px solid #DAA21C;
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* ------------------------------Colours---------*/
 body {
     background-color: #2E3440;
@@ -42,7 +51,7 @@ header {
     top: 0;
     border-bottom-left-radius:8px;
     border-bottom-right-radius:8px;
-    z-index: 2;
+    z-index: 1;
 }
 
 .navbar {
@@ -109,12 +118,12 @@ header {
     color: #ECEFF4;
   }
   .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color: #2E3440;
+    color: #ECEFF4;
     text-decoration:underline;
     text-decoration-thickness: 3px;
   }
   .nav-item {
-    background-color: rgb(236, 239, 244, 0.4);
+    background-color: rgb(236, 239, 244, 0.5);
     width: 100vw;
   }
 }
@@ -142,13 +151,9 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
 }
 
 .hero-image-content {
@@ -172,7 +177,89 @@ header {
     font-size: 2.5vw;
 }
 
+@media screen and (min-width:1440px) {
+    .hero-image-content h1 {
+       font-size: 60px;
+    }
+
+    .hero-image-content h6 {
+        font-size: 28px;
+    }
+}
 /* ------------------------------End of hero image styling---------*/
+
+/* ------------------------------Start of About Us section styling---------*/
+
+#about-us {
+    margin-top: 90px;
+}
+
+#about-us hr {
+    width: 15%;
+}
+
+@media screen and (max-width:576px) {
+    .col-sm-12 {
+    padding: 0 30px;
+    }
+}
+
+.content-image {
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: 50% 63%;
+    width: 66.6vw;
+    height: 40%;
+    margin-top: 40px;
+}
+/* ------------------------------End of About Us section styling---------*/
+
+/* ------------------------------Start of Our Services section styling---------*/
+#our-services hr {
+    width: 30%;
+}
+
+.dog-walking-container {
+    background-color: #ECEFF4;
+    color: #2E3440;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+/*Credit to: https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=accordion-with-plus-minus-icon for the accordion plus/minus icon code*/
+.accordion {
+    --bs-accordion-color: #2E3440;
+    --bs-accordion-btn-color: #2E3440;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%232E3440' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%232E3440' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    --bs-accordion-bg: #ECEFF4;
+    --bs-accordion-border-width: 0;
+    --bs-accordion-inner-border-radius: 5px;
+}
+
+.accordion-title {
+    padding-top: 10px;
+    text-decoration: underline;
+}
+
+.accordion-button {
+
+}
+
+.accordion-button:hover,
+.accordion-button:not(.collapsed) {
+    --bs-accordion-btn-bg: #2E3440;
+    --bs-accordion-btn-color: #ECEFF4;
+    --bs-accordion-color: #ECEFF4;
+    --bs-accordion-btn-icon: #2E3440;
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23ECEFF4' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23ECEFF4' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
+    --bs-accordion-active-color: #ECEFF4;
+    --bs-accordion-active-bg: #2E3440;
+    --bs-accordion-btn-focus-border-color: none;
+}
+/* ------------------------------End of Our Services section styling---------*/
 
 /* ------------------------------Start of Footer styling---------*/
 footer {
@@ -183,6 +270,14 @@ footer {
 }
 
 .footer-sections {
+    margin-top: 20px;
+}
+
+footer h6 {
+    margin-top: 20px;
+}
+
+.social-link {
     margin-top: 20px;
 }
 
@@ -208,6 +303,7 @@ footer i:hover {
 .footer-info {
     font-size: 12px;
     margin-top: 12px;
+    margin-bottom: 10px;
 }
 
 .footer-info p {
@@ -219,10 +315,6 @@ footer i:hover {
 }
 
 #copyright-info p {
-    margin-bottom: 1px;
-}
-
-.col-sm-3 {
-    margin-top: 10px;
+    margin-bottom: 5px;
 }
 /* ------------------------------End of Footer styling---------*/

@@ -2,7 +2,7 @@
 
 ## By Ed Chalk
 
-[View the live project here.](#)
+[View the live project here.](https://edchalk96.github.io/tails-of-valhalla/)
 
 [View the repository here](https://github.com/edchalk96/tails-of-valhalla)
 
