@@ -1,11 +1,17 @@
-/* ------------------------------General styling---------*/
-body {
-    font-family: 'Skranji', cursive, sans-serif;
-    color: #ECEFF4;
+/*Credit to: https://www.w3schools.com/css/css3_fonts.asp for font-face code*/
+@font-face {
+    font-family: Norse;
+    src: url(../font/Norse.otf);
 }
 
-.page-headings {
-    font-weight: 700;
+@font-face {
+    font-family: NorseBold;
+    src: url(../font/Norse-Bold.otf);
+}
+/* ------------------------------General styling---------*/
+body {
+    font-family: 'Norse', sans-serif;
+    color: #ECEFF4;
 }
 
 hr {
@@ -15,6 +21,14 @@ hr {
     margin-right: auto;
 }
 
+.page-headings {
+    font-family: 'NorseBold', sans-serif;
+    font-size: 5vw;
+}
+
+.text-heavy {
+    font-family: 'Belanosima', sans-serif;
+}
 /* ------------------------------Colours---------*/
 body {
     background-color: #2E3440;
@@ -35,9 +49,11 @@ body {
 
 .navbar-brand p {
     color: #2E3440;
+    font-family: 'NorseBold', sans-serif;
     font-weight: 700;
+    font-weight: bold;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 footer {
@@ -51,7 +67,7 @@ header {
     top: 0;
     border-bottom-left-radius:8px;
     border-bottom-right-radius:8px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .navbar {
@@ -60,9 +76,20 @@ header {
     margin: 0;
 }
 
+.navbar-toggler {
+    background-color: #2E3440;
+    color: #ECEFF4;
+    --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28236, 239, 244%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
 .navbar-logo {
     display:inline-flex;
     width: auto;
+  }
+
+  .navbar-nav {
+    font-family: 'NorseBold', sans-serif;
+    font-size: 25px;
   }
 
 .nav-link:hover {
@@ -80,6 +107,7 @@ header {
     background-color: #2E3440;
     color: #ECEFF4;
     text-shadow: none;
+    font-family: 'NorseBold', sans-serif;
 }
 
 /*Credit to W3Schools: Zoom hover styling code taken from https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
@@ -98,33 +126,46 @@ header {
     position: fixed;
     top: 65px;
   }
+  
   .navbar-collapse.collapsing {
     left: -75%;
     transition: height 0s ease;
   }
+  
   .navbar-collapse.show {
     left: 0;
     transition: left 300ms ease-in-out;
   }
+  
   .navbar-toggler.collapsed~.navbar-collapse {
     transition: 500ms ease-in-out;
   }
+  
   .nav-link {
     color: #2E3440;
     padding-bottom: 0;
     padding-left: 15px;
   }
+  
   .nav-link:hover {
     color: #ECEFF4;
   }
+  
+  .navbar-nav {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(236, 239, 244, 0.5);
+    width: 100vw;
+
+    font-family: 'NorseBold', sans-serif;
+    font-size: large;
+  }
+  
   .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
     color: #ECEFF4;
     text-decoration:underline;
     text-decoration-thickness: 3px;
-  }
-  .nav-item {
-    background-color: rgb(236, 239, 244, 0.5);
-    width: 100vw;
   }
 }
 /* ------------------------------End of Header styling---------*/
@@ -153,10 +194,11 @@ header {
     left: 0;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-image-content {
+    font-family: 'NorseBold', sans-serif;
     z-index: 1;
     color: #ECEFF4;
     text-shadow: 2px 2px 5px #2E3440, 0 0 25px #ECEFF4, 0 0 5px #ECEFF4;
@@ -174,18 +216,22 @@ header {
 
     background-color: rgb(236, 239, 244, 0.75);
     color: #2E3440;
+    font-family: 'NorseBold', sans-serif;
     font-size: 2.5vw;
 }
 
-@media screen and (min-width:1440px) {
-    .hero-image-content h1 {
-       font-size: 60px;
-    }
-
-    .hero-image-content h6 {
-        font-size: 28px;
-    }
+@media screen and (max-width:768px) {
+    .hero-image-content .book-btn {
+        font-size: 25px;
+  }
 }
+
+.hero-image-content h1 {
+    font-size: 10vw;
+ }
+ .hero-image-content h2 {
+    font-size: 3.5vw;
+ }
 /* ------------------------------End of hero image styling---------*/
 
 /* ------------------------------Start of About Us section styling---------*/
@@ -235,16 +281,14 @@ header {
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%232E3440' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
     --bs-accordion-bg: #ECEFF4;
     --bs-accordion-border-width: 0;
-    --bs-accordion-inner-border-radius: 5px;
+    --bs-accordion-inner-border-radius: 0;
+    --bs-accordion-btn-focus-box-shadow: 0;
+    --bs-accordion-border-width: none;
 }
 
 .accordion-title {
-    padding-top: 10px;
+    padding-top: 20px;
     text-decoration: underline;
-}
-
-.accordion-button {
-
 }
 
 .accordion-button:hover,
@@ -257,7 +301,11 @@ header {
     --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23ECEFF4' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
     --bs-accordion-active-color: #ECEFF4;
     --bs-accordion-active-bg: #2E3440;
-    --bs-accordion-btn-focus-border-color: none;
+}
+
+.price-quote {
+    font-size: 12px;
+    text-align: center;
 }
 /* ------------------------------End of Our Services section styling---------*/
 

@@ -116,7 +116,7 @@ The project aims to incorporate a cohesive theme inspired by the company's brand
 	- #ECEFF4 (Snow storm white)
 
 #### Typography
-- **Skranji** will be the main and only font used in this project imported from [Google Fonts](https://fonts.google.com/specimen/Skranji?query=Skranji). In keeping with the company brand this font was chosen as it is inspired by the same theme of Norse mythology. The fallback font will be sans-serif in instance Skranji is not imported into the project correctly.  
+- **Norse** and **NorseBold** will be the main font used for headings/titles/sub-titles in this project. This font was downloaded from [this website](https://www.1001fonts.com/norse-font.html#license) before being added to the project files and imported into the CSS file. In keeping with the company brand this font was chosen as it is inspired by the same theme of Norse mythology. For sections of the project that are more text heavy, **Belanosima** (imported from [Google Fonts](https://fonts.google.com/specimen/Belanosima#styles)) will be used so the text is easier to read for the user. The fallback font will be sans-serif in the instance these fonts are not imported into the project correctly.  
 
 #### Imagery & Icons
 - Icons will be used for the social media links in the footer of the project through all pages. These will be given a hover feature to give feedback to the user.
