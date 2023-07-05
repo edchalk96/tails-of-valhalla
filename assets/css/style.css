@@ -250,13 +250,14 @@ header {
     }
 }
 
-.content-image {
+#about-us .image-box {
     border-radius: 8px;
     object-fit: cover;
     object-position: 50% 63%;
     width: 66.6vw;
-    height: 40%;
-    margin-top: 40px;
+    aspect-ratio: 5/3;
+    margin-top: 20px;
+    margin-bottom: 45px;
 }
 /* ------------------------------End of About Us section styling---------*/
 
@@ -265,12 +266,13 @@ header {
     width: 30%;
 }
 
-.dog-walking-container {
+.accordion-container {
     background-color: #ECEFF4;
     color: #2E3440;
     border-radius: 10px;
     width: 90%;
     margin: auto;
+    margin-top: 10px;
 }
 
 /*Credit to: https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=accordion-with-plus-minus-icon for the accordion plus/minus icon code*/
@@ -288,7 +290,13 @@ header {
 
 .accordion-title {
     padding-top: 20px;
+    font-family: 'NorseBold', sans-serif;
     text-decoration: underline;
+    font-size: 20px;
+}
+
+.accordion-button {
+    font-size: 20px;
 }
 
 .accordion-button:hover,
@@ -304,8 +312,35 @@ header {
 }
 
 .price-quote {
-    font-size: 12px;
+    font-size: 18px;
     text-align: center;
+    text-decoration: none;
+    color: #2E3440;
+}
+
+.price-quote:hover {
+    text-decoration: underline;
+    color: #DAA21C;
+}
+
+.video-box {
+    width: 66.6%;
+    box-shadow: 0 4px 8px 0 rgba(92, 98, 112, 0.2), 0 6px 20px 0 rgba(92, 98, 112, 0.2);
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+#recall-training {
+    font-size: 14px;
+    margin: 0 0 0 10px;
+}
+
+#our-services .image-box {
+    border-radius: 8px;
+    width: 66.6vw;
+    object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 45px;
 }
 /* ------------------------------End of Our Services section styling---------*/
 
@@ -323,6 +358,7 @@ footer {
 
 footer h6 {
     margin-top: 20px;
+    text-decoration: underline;
 }
 
 .social-link {
@@ -352,17 +388,18 @@ footer i:hover {
     font-size: 12px;
     margin-top: 12px;
     margin-bottom: 10px;
+    font-family: 'Belanosima', sans-serif;
 }
 
 .footer-info p {
-    margin: 0;
+    margin: 2px;
 }
 
 #copyright-info {
     font-size: 10px;
+    font-family: 'Belanosima', sans-serif;
+    padding-bottom: 1px;
 }
 
-#copyright-info p {
-    margin-bottom: 5px;
-}
+
 /* ------------------------------End of Footer styling---------*/
