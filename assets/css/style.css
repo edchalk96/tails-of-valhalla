@@ -26,6 +26,12 @@ hr {
     font-size: 5vw;
 }
 
+@media screen and (max-width:620px) {
+    .page-headings {
+        font-size: 30px;
+    }
+}
+
 .text-heavy {
     font-family: 'Belanosima', sans-serif;
 }
@@ -67,7 +73,7 @@ header {
     top: 0;
     border-bottom-left-radius:8px;
     border-bottom-right-radius:8px;
-    z-index: 2;
+    z-index: 3;
 }
 
 .navbar {
@@ -111,7 +117,7 @@ header {
 }
 
 /*Credit to W3Schools: Zoom hover styling code taken from https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
-.btn:hover {
+.navbar .btn:hover {
     color: #DAA21C;
     background-color: #2E3440;
     transform: scale(1.25);
@@ -263,7 +269,7 @@ header {
 
 /* ------------------------------Start of Our Services section styling---------*/
 #our-services hr {
-    width: 30%;
+    width: 20%;
 }
 
 .accordion-container {
@@ -273,6 +279,7 @@ header {
     width: 90%;
     margin: auto;
     margin-top: 10px;
+    z-index: 1;
 }
 
 /*Credit to: https://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=accordion-with-plus-minus-icon for the accordion plus/minus icon code*/
@@ -344,10 +351,269 @@ header {
 }
 /* ------------------------------End of Our Services section styling---------*/
 
+/* ------------------------------Start of Why Us section styling---------*/
+#why-us hr {
+    width: 10%;
+}
+
+#why-us .row {
+    margin: 0;
+}
+
+/*Bulleted lists styling*/
+ul {
+    font-size: 20px;
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+.listed-items {
+    margin-top: 20px;
+}
+
+#reasons-why hr {
+    opacity: 0.35;
+    border-top: 2px solid #DAA21C;
+    width: 66.6%
+}
+
+/*Credit to W3 Schools for the Unicode characters: https://www.w3schools.com/charsets/ref_utf_runic.asp and */ 
+.listed-items .item-1::marker {
+    content: "\16B1";
+}
+
+.listed-items .item-2::marker {
+    content: "\16D2";
+}
+
+.listed-items .item-3::marker {
+    content: "\16D7";
+}
+
+.listed-items .item-4::marker {
+    content: "\16C3";
+}
+
+.listed-items .item-5::marker {
+    content: "\16B9";
+}
+
+.listed-items .item-6::marker {
+    content: "\16DE";
+}
+
+.listed-items .item-7::marker {
+    content: "\16DF";
+}
+
+.listed-items .item-8::marker {
+    content: "\16AB";
+}
+
+.listed-items .item-9::marker {
+    content: "\16A6";
+}
+
+.listed-items .item-10::marker {
+    content: "\16A2";
+}
+
+.listed-items .item-11::marker {
+    content: "\16CF";
+}
+
+.listed-items .item-12::marker {
+    content: "\16C9";
+}
+/* ------------------------------End of Why Us section styling---------*/
+
+/* ------------------------------Start of Meet the Team section styling---------*/
+#meet-the-team {
+    margin-top: 50px;
+}
+
+#meet-the-team hr {
+    width: 18%;
+}
+
+.carousel {
+    width: 90vw;
+    margin: auto;
+}
+
+.carousel-inner {
+    width: 66.6%;
+    margin: auto;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-item img {
+    border-radius: 50%;
+    width: 40%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    color: #ECEFF4;
+}
+
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: #ECEFF4;
+}
+
+.carousel-caption {
+    position: unset;
+    color: #ECEFF4;
+}
+
+.carousel-indicators {
+    margin: -10px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #DAA21C;
+}
+
+.carousel-caption p,
+.carousel-caption a  {
+    margin: 0;
+    font-size: 1.25rem;
+    font-family: 'Belanosima', sans-serif;
+}
+
+.carousel-caption h5 {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2rem;
+}
+
+.carousel-caption h6 {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width:750px) {
+    .carousel-caption h5 {
+        font-size: 20px;
+    }
+
+    .carousel-caption h6 {
+        font-size: 18px;
+    }
+
+    .carousel-caption p,
+    .carousel-caption a {
+        font-size: 16px;
+    }
+
+    .carousel-caption .btn-more-info .btn {
+        font-size: 16px;
+    }
+}
+
+.carousel-item a {
+    font-family: 'Belanosima', sans-serif;
+    text-decoration: none;
+    color: #ECEFF4;
+}
+
+.carousel-item a:hover {
+    color: #DAA21C;
+    text-decoration: underline;
+}
+
+.carousel-caption btn {
+    font-size: 16px;
+}
+
+.btn-more-info {
+    margin-top: 10px;
+}
+
+.btn-more-info .btn:hover {
+    color: #DAA21C;
+    text-decoration: underline;
+}
+
+.btn-more-info .btn {
+    font-size: 1.25rem;
+    color: #ECEFF4;
+    font-weight: bold;
+    background-color: #5C6270;
+    padding: 0 5px;
+}
+
+/*Modal styling*/
+.modal-content {
+    background-color: #ECEFF4;
+    color: #2E3440;
+}
+
+.modal-header {
+    border-bottom: none;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 0;
+}
+
+.modal-title {
+    font-weight: bold;
+    color: #2E3440;
+}
+
+.modal-header hr {
+    margin-top: 0;
+    border-top: 2px solid #DAA21C;
+    margin: 0;
+}
+
+#MagnusModal hr {
+    width: 20%;
+}
+
+#AvaModal hr {
+    width: 16%;
+}
+
+#LilyModal hr {
+    width: 10%;
+}
+
+#MaxModal hr {
+    width: 8%;
+}
+
+#OllieModal hr {
+    width: 12%;
+}
+
+.modal-body p {
+    color: #2E3440;
+    font-size: 1rem;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.modal-footer .btn {
+    background-color: #2E3440;
+    font-weight: 500;
+}
+
+.modal-footer .btn:hover {
+    font-weight: bold;
+}
+/* ------------------------------End of Meet the Team section styling---------*/
+
 /* ------------------------------Start of Footer styling---------*/
 footer {
-    width: 100%;
-    bottom: 0;
     border-top-left-radius:8px;
     border-top-right-radius:8px;
 }
@@ -398,7 +664,7 @@ footer i:hover {
 #copyright-info {
     font-size: 10px;
     font-family: 'Belanosima', sans-serif;
-    padding-bottom: 1px;
+    padding: 5px;
 }
 
 
