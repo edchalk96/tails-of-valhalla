@@ -612,6 +612,65 @@ li::marker {
 }
 /* ------------------------------End of Meet the Team section styling---------*/
 
+/* ------------------------------Start of Testimonials section styling---------*/
+#testimonials hr {
+    width: 25%;
+}
+
+#testimonials h2 {
+    margin-top: 45px;
+}
+
+.testimonial-image {
+    margin: 10px 0;
+}
+
+.testimonial-item-container {
+    background-color: #ECEFF4;
+    color: #2E3440;
+    border-radius: 10px;
+    margin: 10px 5px;
+    padding: 20px;
+}
+
+#testimonials hr {
+    width: 10%;
+}
+
+#testimonials .row {
+    margin: 5px;
+}
+
+.testimonial-image img {
+    width: 50%;
+    border-radius: 50%;
+    border-color: #DAA21C;
+    border-style: solid;
+    border-width: 3px;
+    margin-bottom: 10px;
+}
+
+.testimonial-item-container h5 {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.testimonial-item-container h6 {
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+@media screen and (max-width:750px) {
+.testimonial-item-container h5 {
+        font-size: 20px;
+    }
+
+.testimonial-item-container h6 {
+        font-size: 18px;
+    }
+}
+/* ------------------------------End of Testimonials section styling---------*/
+
 /* ------------------------------Start of Footer styling---------*/
 footer {
     border-top-left-radius:8px;
