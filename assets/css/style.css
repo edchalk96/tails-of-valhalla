@@ -12,6 +12,9 @@
 body {
     font-family: 'Norse', sans-serif;
     color: #ECEFF4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 hr {
@@ -532,16 +535,16 @@ li::marker {
     font-size: 16px;
 }
 
-.btn-more-info {
+.btn-modal {
     margin-top: 10px;
 }
 
-.btn-more-info .btn:hover {
+.btn-modal .btn:hover {
     color: #DAA21C;
     text-decoration: underline;
 }
 
-.btn-more-info .btn {
+.btn-modal .btn {
     font-size: 1.25rem;
     color: #ECEFF4;
     font-weight: bold;
@@ -634,7 +637,7 @@ li::marker {
 }
 
 #testimonials hr {
-    width: 10%;
+    width: 40%;
 }
 
 #testimonials .row {
@@ -671,10 +674,136 @@ li::marker {
 }
 /* ------------------------------End of Testimonials section styling---------*/
 
+/* ------------------------------Start of Booking page styling---------*/
+#book-now {
+    padding-top: 100px;
+    margin: auto;
+}
+
+#book-now hr {
+    width: 12%;
+}
+
+.book-container {
+    background-color: #ECEFF4;
+    color: #2E3440;
+    font-family: 'NorseBold', sans-serif;
+    border-radius: 10px;
+    width: 90vw;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#further-info label,
+#further-info input {
+   display: flex;
+   flex-direction: column;
+   margin: auto;
+}
+
+#finfo {
+    width: 100%;
+    aspect-ratio: 5/2;
+}
+
+@media screen and (min-width:768px) {
+    #finfo {
+        width: 50%;
+    }
+}
+
+input::placeholder,
+input::-webkit-input-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+    color: #2E3440;
+    opacity: 0.5;
+}
+
+#finfo::-webkit-input-placeholder {
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+}
+
+#finfo::-moz-placeholder {
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+}
+
+#finfo:-ms-input-placeholder {
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+}
+
+#finfo:-moz-placeholder {
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+}
+
+.form-content {
+    padding: 10px;
+}
+
+.form-content label {
+    padding: 0 5px;
+}
+
+form .book-btn {
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.5rem;
+}
+
+form .book-btn:hover {
+    color: #DAA21C;
+    background-color: #2E3440;
+    transform: scale(1.25);
+    transition: transform .2s;
+    text-shadow: none;
+}
+
+#terms-section {
+    margin-top: 15px;
+}
+
+#terms-section button {
+    font-family: 'Belanosima', sans-serif;
+}
+
+#terms-section .btn-modal {
+    margin-top: 3px;
+}
+
+.terms-content {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+}
+
+.btn-modal ol {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 1rem;
+}
+
+.list-header {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.list-header ol {
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+/* ------------------------------End of Booking page styling---------*/
+
 /* ------------------------------Start of Footer styling---------*/
 footer {
     border-top-left-radius:8px;
     border-top-right-radius:8px;
+    margin-top: auto;
 }
 
 .footer-sections {
