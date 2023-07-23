@@ -799,6 +799,67 @@ form .book-btn:hover {
 }
 /* ------------------------------End of Booking page styling---------*/
 
+/* ------------------------------Start of Gallery page styling---------*/
+#gallery {
+    padding-top: 100px;
+}
+
+#gallery h3 {
+    padding-top: 20px;
+}
+
+#gallery hr {
+    width: 8%;
+}
+
+#gallery .intro {
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.photo-gallery .photos {
+    padding-bottom:20px;
+}
+
+.gallery-image-container img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: contain;
+    margin-top: 5px;
+}
+
+/*Image overlay styling*/
+.gallery-image-container {
+    position: relative;
+}
+ /*Credit to W3 Schools for image overlay styling: https://www.w3schools.com/howto/howto_css_image_overlay_title.asp*/
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #ECEFF4;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-image-container:hover .image-overlay {
+    opacity: 1;
+}
+
+.lb-outerContainer { 
+    background-color: #ECEFF4;
+}
+
+.shadow {
+    box-shadow: 0 .5rem 1rem rgba(236,239,244,.15)!important;
+}
+/* ------------------------------End of Gallery page styling---------*/
+
+
 /* ------------------------------Start of Footer styling---------*/
 footer {
     border-top-left-radius:8px;
