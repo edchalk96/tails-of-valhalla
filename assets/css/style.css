@@ -859,6 +859,102 @@ form .book-btn:hover {
 }
 /* ------------------------------End of Gallery page styling---------*/
 
+/* ------------------------------Start of Blogs page styling---------*/
+#blogs {
+    padding-top: 100px;
+}
+
+#blogs h3 {
+    padding-top: 20px;
+}
+
+#blogs hr {
+    width: 6%;
+}
+/*Credit to Lton Etyo for parts of the blog card styling code: https://codepen.io/lyon-etyo/pen/OJmyMGd?editors=1100*/
+.blogs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block: 2rem;
+    gap: 2rem;
+  }
+
+.card-header {
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+}
+
+#blog-image-1 {
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: 60% 50%;
+}
+
+#blog-image-2 {
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: 50% 20%;
+}
+
+#blog-image-3 {
+    max-width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    object-position: 20% 20%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(20rem, calc(20rem + 2vw), 22rem);
+    overflow: hidden;
+    box-shadow: 0 5px 10px 4px rgba(236, 239, 244, 0.19);
+    border-radius: 1em;
+    background-color: #ECEFF4;
+    padding: 0;
+    border: 0;
+  }
+
+.card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: #2E3440;
+  }
+
+.card-body h4 {
+    font-size: 1.5rem;
+    font-family: NorseBold;
+  }
+
+  .card-body .btn {
+    background-color: #2E3440;
+    color: #ECEFF4;
+    text-shadow: none;
+    font-family: 'NorseBold', sans-serif;
+    width: 33.3%;
+    align-self: center;
+  }
+
+  .card-body .btn:hover {
+    color: #DAA21C;
+    background-color: #2E3440;
+    transform: scale(1.25);
+    transition: transform .2s;
+    text-shadow: none;
+}
+
+@media screen and (max-width:360px) {
+    .card-container {
+        width: 90%;
+    }
+}
+/* ------------------------------End of Blogs page styling---------*/
 
 /* ------------------------------Start of Footer styling---------*/
 footer {
