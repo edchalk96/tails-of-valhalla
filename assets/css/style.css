@@ -859,7 +859,7 @@ form .book-btn:hover {
 }
 /* ------------------------------End of Gallery page styling---------*/
 
-/* ------------------------------Start of Blogs page styling---------*/
+/* ------------------------------Start of Blogs overview page styling---------*/
 #blogs {
     padding-top: 100px;
 }
@@ -954,7 +954,143 @@ form .book-btn:hover {
         width: 90%;
     }
 }
-/* ------------------------------End of Blogs page styling---------*/
+/* ------------------------------End of Blogs overview page styling---------*/
+
+/* ------------------------------Start of Blog page styling---------*/
+.blog-image-container-one {
+    aspect-ratio: 5/2;
+    max-width: 100%;
+    background: url(../images/bristol-barkers-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-image-container-two {
+    aspect-ratio: 5/2;
+    max-width: 100%;
+    background: url(../images/keeping-your-dog-cool-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-image-container-three {
+    aspect-ratio: 5/2;
+    max-width: 100%;
+    background: url(../images/prepare_frozen_kong_image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    aspect-ratio: 5/2;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width:800px) {
+    .blog-image-container-one {
+        aspect-ratio: 3/2;
+    }
+
+    .blog-image-container-two {
+        aspect-ratio: 3/2;
+    }
+
+    .blog-image-container-three {
+        aspect-ratio: 3/2;
+    }
+
+    .blog-opaque-overlay {
+        aspect-ratio: 3/2;
+    }
+}
+
+.blog-image-content {
+    font-family: 'NorseBold', sans-serif;
+    z-index: 1;
+    color: #ECEFF4;
+    text-shadow: 2px 2px 5px #2E3440, 0 0 25px #ECEFF4, 0 0 5px #ECEFF4;
+    padding-top: 50px;
+}
+
+.blog-image-content h1 {
+    font-size: 5vw;
+ }
+
+ .blog-image-content h4 {
+    font-size: 3vw;
+ }
+
+#blog-content {
+    padding-top: 40px;
+}
+
+#blog-content .row {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.paragraph-heading {
+    font-family: 'NorseBold', sans-serif;
+    padding-bottom: 20px;
+    text-decoration: underline;
+    color: #DAA21C;
+ }
+
+ #blog-content a {
+    color: #DAA21C;
+    text-decoration: none;
+    font-family: 'NorseBold', sans-serif;
+}
+
+#blog-content a:hover {
+    color: #ECEFF4;
+    text-decoration: underline;
+}
+
+#blog-content ul {
+    font-size: 1rem;
+}
+
+#blog-content li {
+    padding-bottom: 8px;
+}
+
+#blog-content li::marker {
+    color: #DAA21C;
+}
+
+#blog-content li p {
+    margin-left: 15px;
+}
+/* ------------------------------End of Blog page styling---------*/
 
 /* ------------------------------Start of Footer styling---------*/
 footer {
