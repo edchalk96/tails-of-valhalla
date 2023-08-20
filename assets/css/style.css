@@ -1090,7 +1090,67 @@ form .book-btn:hover {
 #blog-content li p {
     margin-left: 15px;
 }
+
+.blog-heading {
+    margin: 5px 15px;
+}
 /* ------------------------------End of Blog page styling---------*/
+
+/* ------------------------------Start of Contact Us page styling---------*/
+#contact-us {
+    padding-top: 100px;
+}
+
+#contact-us hr {
+    width: 10%;
+}
+
+.contact-us-container {
+    background-color: #ECEFF4;
+    color: #2E3440;
+    font-family: 'NorseBold', sans-serif;
+    border-radius: 10px;
+    width: 90vw;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#message {
+    width: 100%;
+    aspect-ratio: 5/2;
+}
+
+@media screen and (min-width:768px) {
+    #message {
+        width: 90%;
+        aspect-ratio: 4/1;
+        margin: auto;
+    }
+}
+#message::-webkit-input-placeholder {
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+}
+
+#message::-moz-placeholder {
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+}
+
+#message:-ms-input-placeholder {
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+}
+
+#message:-moz-placeholder {
+    white-space:pre-line;  
+    position:relative;
+    top:-7px;
+}
+/* ------------------------------End of Contact Us page styling---------*/
 
 /* ------------------------------Start of Footer styling---------*/
 footer {
