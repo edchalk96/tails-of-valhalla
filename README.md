@@ -62,17 +62,14 @@ This project is targerted at dog owners and prospective dog owners looking for d
     - As a first time visitor, I want to be able to smoothly progress through the content and pages, whilst avoiding being overwhelmed by information.
     - As a first time visitor, I want the project to stand out from others.
     - As a first time visitor, I want to be able to see reviews/testimonials of other dog owners whom have used the companies services.
-    - As a first time visitor, I want to identify the areas in which the company covers and/or the locations of their training services.
     - As a first time visitor, I want to feel as if this is a reputable company that offers trustworthy services to a high standard.
     - As a first time visitor, I want to locate the companies social media links, helping to determine how well known and trusted they are in the area.
-    - As a first time visitor, I want to see images and/or videos of the companies training and walking sessions.
-    - As a first time visitor, I want to be able to create an account in order to book sessions.
+    - As a first time visitor, I want to see images of the companies training and walking sessions.
     
 - #### Returning Visitor Goals
     - As a returning visitor, I want to be able to easily head to the booking page. 
     - As a returning visitor, I want to be able to find contact information for the company with questions I may have.
-    - As a returning visitor, I want to be able to read as well as sign-up to recieve helpful tips on dog training and/or walking.
-    - As a returning visitor, I want to to be able to sign-in to my account and manage my bookings and/or book more sessions.
+    - As a returning visitor, I want to be able to read helpful tips on dog training and/or walking.
 
 - #### Frequent User Goals
     - As a frequent user, I want to easily head to the booking page.
@@ -137,12 +134,13 @@ Below are the wireframes for all pages created for the project using Balsamiq. T
 - #### Blogs Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/blogs-page.pdf)
 - #### Contact Us Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/contact-us-page.pdf)
 - #### Example Blog Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/example-blog-page.pdf)
-- #### Thank You Page - [View](https://github.com/edchalk96/tails-of-valhalla/blob/main/documentation/wireframes/thank-you-page.pdf)
 
 As these wire frames were an initial conceptualisation of the project, some aspects were required to be altered during development. The below list are differences seen between the wireframe and project:
- - Text here
- - Text here
- - Text here
+ - Did not include the down scroll button on the home page as this made the home page look cluttered.
+ - Images are not overlapped with coloured section blocks and are instead kept seperate for a cleaer look and feel.
+ - Terms and conditions modal included in the Book page which was not included in the wire frames.
+ - Text at the top of the Gallery page was not included as this did not provide any useful information and was deemed not needed.
+ - Minor realignment of the different label and input boxes in the contact us page.
 
  ### Surface Plane
  ---
@@ -150,16 +148,16 @@ As these wire frames were an initial conceptualisation of the project, some aspe
 ### *Features*
 
 #### *Navbar* 
+The navbar remains the same across all pages and is responsive and changes to a hamburger menu at 992 pixels. Once clicked the navbar items overlay the current pages content with a translucent white background to make them stand out. The logo in the centre of the navabr is a link back to the home page. The current active page is indicated in the navbar by being underlined and orange (#DAA21C) or underlined and white (#ECEFF4) when the hamburger icon is toggled.
 
 #### *Footer*
+The footer remains the same across all pages and contains information about the company. Contact information is included as informaiton and the sub-heading for this information is a link to the Contact Us page for to make this easier for the user to make contact. Links are also included to the companies social media pages, contained within the respective social meida platforms icon.
 
-#### *Hero Image*
+#### *Hero Image & Images*
+The hero image was selected to fit within the theme of the company and contains a dark overlay so the company logo and book button stand out against the image. All other images used were also chosen as they are relatable to the company and the section they are within on the website.
 
 #### *Logo*
-
-#### *Images*
-
-#### *Video*
+The company logo, used in the navbar, was created by myself (author of website) by outlining an existing image taken by myself and filling this in with the colour pallete of the company/website.
 
 ---
 
@@ -168,47 +166,84 @@ As these wire frames were an initial conceptualisation of the project, some aspe
 ### *Languages Used*
 
 - HTML5
+    - Used as the basic building block for the project and to structure the content.
 - CSS3
+    - Used to style all of the web content across the project.
 
 ### *Frameworks, Libraries & Programs Used*
 
-- Bootstrap
-    - Text here
+- Bootstrap (v5.3)
+    - Used as the main framework to aid in making the project responsive.
 - Hover.css
-    - Text here
-- Font Awesome
-    - Text here
+    - This was used to create hover effects on buttons and other items that contain links or perform actions, such as modal links.
+- Font Awesome (v6.4.2)
+    - This was used to add icons throughout the project.
 - Google Fonts
-    - Text here
+    - Google fonts was used to import the 'Belanosimo' font which was used when the main font could not be used due the content being text heavy.
 - Git
-    - Text here
+    - This was used for version control by utilising the Gitpod terminal to commit to Git and Push to GitHub
 - GitHub
-    - Text here
+    - This was used to store Used to code for the project after being pushed.
 - Balsamiq
-    - Text here
-- Concepts
-    - Text here
+    - This was used to create the wireframes for the project before being coded, as seen in the skeleton plane.
 - W3 Schools
-    - Text here
+    - W3 schools was another framework used for the project, most nottably the unicode for the runic symbols used in place of bullet points.
+- Concepts
+    - This was the program used to create the logo for the company.
 
 ---
 
 ## Testing
-Text here
+The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+- W3C Markup Validator - Results
+- W3C CSS Validator - Results
 
 ### Testing User Stories from User Experience (UX) Section
 
 - #### First Time Visitor Goals
-    - Text here
-    - Text here
+    1. **As a first time visitor, I want to be able to easily identify I am on the correct website for the services I am looking for (i.e. dog walking/training).**
+        - When first visiting the home page, the user is immediately greeted company name and services provided in big bold writing, at the centre of the page.
+    2. **As a first time visitor, I want to easily identify where to book the services of the company.**
+        - When first entering the site, the user is greeted with the hero image along with a big *Book Now* button at the bottom of the hero image/page which takes thes user to the *Book* page.
+        - Additionally, the navbar at the top of the page (or in the hamburger menu) also has a clear link to this page.
+    3. **As a first time visitor, I want to be able to insinctively navigate the project.**
+        - The navbar for the site is at the top of page, on every page, (or in the hamburger menu). 
+        - The respective page that the user is currentrly on, also changes colour and is underlined to signify to the user which page they are currently on for easy navigation.
+    4. **As a first time, visitor I want to find out more information on the company, their services and prices.**
+        - On the home page, when the user scrolls down, the user will initially dicsover some background infomation on the company and then below this, easy to use drop down list describing the different services provided by the company.
+    5. **As a first time visitor, I want to see if the trainers/walkers are certified and fully trained.**
+        - With futher scrolling down the home page, the user is greeted with an easy to use carousel, which shows the companies trainers including brief infomation on them and their qualifications.
+    6. **As a first time visitor, I want to be able to smoothly progress through the content and pages, whilst avoiding being overwhelmed by information.**
+        - The site has been designed to to navigate the content smoothly and avoid the user from feeling overhelmed with infomation.
+        - The company logo at the top of the page within the navbar, which appears on every page, is also a link back to the home page.
+    7. **As a first time visitor, I want the project to stand out from others.**
+        - With bold, contrasting colours and a unique theme included in the design/content, the site stands out from others.
+    8. **As a first time visitor, I want to be able to see reviews/testimonials of other dog owners whom have used the companies services.**
+        - Further down, at the bottom of the home page, contains 3 card-like testimonails of existing customers of the company. Pictures and names of the customers dogs have been used to keep the customers anonymous.
+    9. **As a first time visitor, I want to feel as if this is a reputable company that offers trustworthy services to a high standard.**
+        - With the inclusion testimaonials and an easy to use site with all the essential infomation, the site offers the feel of trustworthy company.
+    10. **As a first time visitor, I want to locate the companies social media links, helping to determine how well known and trusted they are in the area.**
+        - In the footer of the site, which appears on every page, contains the logos for Facebook and Instagram, which are also links to the companies social media sites respectively.
+    11. **As a first time visitor, I want to see images of the companies training and walking sessions.**
+        - Within, the navbar there is a link to the gallery page which contains images of the dogs during sessions with a description of what they are doing/ what is being trained. 
 
 - #### Returning Visitor Goals
-    - Text here
-    - Text here
+    1. **As a returning visitor, I want to be able to easily head to the booking page.**
+        - When first entering the site, the user is greeted with the hero image which, at the bottom, contains a big *Book Now* button at the bottom of the hero image/page which takes thes user to the *Book* page.
+    2. **As a returning visitor, I want to be able to find contact information for the company with questions I may have.**
+        - At the bottom of every page, within the footer, contains the contact information for the company if the user wishes to get in contact.
+        - Additionally, within the navbar (and hamburger menu) contains a link to the contact us page, which the user can fill in their information and question which then gets set to the company.
+    3. **As a returning visitor, I want to be able to read helpful tips on dog training and/or walking.**
+        - Within the navbar (or hamburger menu) contains a link to the blogs page which contains card-like blog descriptions. Within these cards contains a *Read More* button which takes the user to the specific blog page.
 
 - #### Frequent User Goals
-    - Text here
-    - Text here
+    1. **As a frequent user, I want to easily head to the booking page.**
+        - When first entering the site, the user is greeted with the hero image which, at the bottom, contains a big *Book Now* button at the bottom of the hero image/page which takes thes user to the *Book* page.
+    2. **As a frequent user, I want to be able to check to see if there is any new updates to the services and/or new helpful blogs.**
+        - Within the navbar (or hamburger menu) contains a link to the blogs page which is updated. Each blog contains information on who wrote it and the date it was posted.
+    3. **As a frequent user, I want to be able to see if there are any recent images of training/ walking sessions.**
+        -  Within, the navbar there is a link to the gallery page which contains images of the dogs during sessions with a description of what they are doing/ what is being trained. New images will be added as and when there are new images to be added.
 
 ### Further Testing
 - Text here
