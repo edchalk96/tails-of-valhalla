@@ -6,6 +6,8 @@
 
 [View the repository here](https://github.com/edchalk96/tails-of-valhalla)
 
+![Responsive website image](assets/images/amiresponsive_image.png)
+
 ## Table of Contents:
 1. [About the website](#about-the-website)
 2. [User Experience (UX) | The 5 Planes](#user-experience-ux--the-5-planes)
@@ -190,14 +192,13 @@ The company logo, used in the navbar, was created by myself (author of website) 
     - W3 schools was another framework used for the project, most nottably the unicode for the runic symbols used in place of bullet points.
 - Concepts
     - This was the program used to create the logo for the company.
-
 ---
 
 ## Testing
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-- W3C Markup Validator - Results
-- W3C CSS Validator - Results
+- [W3C Markup Validator](https://validator.w3.org/) - [Results]()
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](./assets/images/w3c-css-validation.png)
 
 ### Testing User Stories from User Experience (UX) Section
 
@@ -246,11 +247,90 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
         -  Within, the navbar there is a link to the gallery page which contains images of the dogs during sessions with a description of what they are doing/ what is being trained. New images will be added as and when there are new images to be added.
 
 ### Further Testing
-- Text here
+- The website was tested on the following browsers with success: 
+    - Google Chrome
+    - Microsoft Edge
+    - Mozilla Firefox
+    - Opera
+    - Safari
+- The webiste was tested throughout using chrome developer tools especially to test the responsiveness of the site, using emulators and generic screen sizes (based on pixels) with success.
+- Constructive feedack and bug testing was received from friends/colleagues/relatives who were asked to review the site.
+- Lighthouse, a feature of Google Chrome developer tools was used to assess the performance of the website, it's features and where approproiate, analyse what improvememts could be made to improve the sites performance. Each page of the site was tested with a few amendments being made as a result, as showm below:
+
+1. **Home page**
+
+![Lighthouse testing output from the sites home page](assets/images/lighthouse-test-home.png) 
+![Lighthouse testing, analysis on home page](assets/images/lighthouse-test-home-analysis.png) 
+![Lighthouse testing, further analysis on home page](assets/images/lighthouse-test-home-analysis2.png) 
+![Lighthouse testing, further analysis on home page](assets/images/lighthouse-test-home-analysis3.png)
+
+- As can be seen by the above images the performance parameter of the home page needed improvement. By looking depper into this and the analysis sections of the lighthous report, it could be seen that the image files associated with the home page were too large and needed compressing.
+    - After the above amendment of compressing the image files, the performance paramter of the lighthouse report has improved, as can be seen below.
+
+2. **Book page**
+
+![Lighthouse testing output from the sites book page](assets/images/lighthouse-test-book.png)
+
+- As can be seen by the above image, all parameters tested are performing well for this page (all 90+/green) and therefore no amendments for this page were deemed necessary.
+
+3. **Gallery page**
+
+![Lighthouse testing output from the sites gallery page](assets/images/lighthouse-test-gallery.png)
+![Lighthouse testing, analysis on gallery page](assets/images/lighthouse-test-gallery-analysis.png)
+![Lighthouse testing, further analysis on gallery page](assets/images/lighthouse-test-gallery-analysis2.png)
+![Lighthouse testing, further analysis on gallery page](assets/images/lighthouse-test-gallery-analysis3.png)
+
+- As can be seen by the above images....
+    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+
+4. **Blogs**
+
+![Lighthouse testing output from the sites blogs page](assets/images/lighthouse-test-blogs.png)
+![Lighthouse testing, analysis on gallery page](assets/images/lighthouse-test-blogs-analysis.png)
+
+- As can be seen by the above images....
+    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+
+5. **Bristol barkers blog page**
+
+![Lighthouse testing output from the sites bristol barkers blog page](assets/images/lighthouse-test-bristol-barkers-blog.png)
+![Lighthouse testing output from the sites bristol barkers blog page](assets/images/lighthouse-test-bristol-barkers-blog-analysis.png)
+
+- As can be seen by the above images....
+    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+
+6. **Keeping your dog cool blog page**
+
+![Lighthouse testing output from the sites keeping your dog cool blog page](assets/images/lighthouse-test-keeping-your-dog-cool-blog.png)
+![Lighthouse testing output from the sites keeping your dog cool blog page](assets/images/lighthouse-test-keeping-your-dog-cool-blog-analysis.png)
+
+- As can be seen by the above images....
+    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+
+7. **Prepare frozen kong blog page**
+
+![Lighthouse testing output from the sites prepare frozen kong blog page](assets/images/lighthouse-test-prepare-frozen-kong-blog.png)
+![Lighthouse testing output from the sites prepare frozen kong blog page](assets/images/lighthouse-test-prepare-frozen-kong-blog-analysis.png)
+
+- As can be seen by the above images....
+    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+
+8. **Contact us page**
+
+![Lighthouse testing output from the sites contact us page](assets/images/lighthouse-test-contact-us.png)
+![Lighthouse testing output from the sites contact us page](assets/images/lighthouse-test-contact-us-analysis.png)
+
+- As can be seen by the above images....
+    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+
 
 ### Known Bugs and Fixes
-- Text here
-
+- At exactly 992 pixels, when the navbar transitions from a full navbar to a hamburger menu, the navbar gets pushed below the header and in the CSS style of the hamburger menu items. No fix found for this as of yet so this is still to be fixed at a later date.
+- During W3C validator testing a warning was flagged up ([see here](assets/images/w3c-validator-warning.png)) with the following message: "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.". This is used in the comments when dividing the ocde into sections. In order to fix/remove this warning message, `<!------` was changed to `<!-- ===`, and in doing so the same structure of the sectioning remained. Credit to Harry Leepz's [Skihism Project Read.me file](https://github.com/Harry-Leepz/Sikhism-Project/blob/master/README.md) for for this fix.
+- During W3C validator testing of the index.html page, an error regarding the navbar logo image ([see here](assets/images/w3c-validator-navbar-logo-error.png)) was picked up with the following message: "Bad value 50px for attribute width on element img: Expected a digit but saw p instead." In order to fix this, "px" was removed from the code leaving the following code `width="50"`. This fix was implemented across all pages as the navbar is ever-present on the site.
+- During W3C validator testing of the index.html page, an error flagged up for an duplicated ID of `id="accordionExample"` in the *Our Services* section ([see here](assets/images/w3c-validator-duplicate-id.png)). This was fixed by renaming the first instance this ID appears to `id="accordionDogWalking"`.
+- During W3C validator testing of the index.html page, an error flagged up ([see here](assets/images/w3c-validator-button-p-error.png)) with the following message: "Element p not allowed as child of element button in this context. (Suppressing  further errors from this subtree.)". This was fixed by removing the paragraph element from the code, as well as the ID and respective CSS styling code.
+- During W3C validator testing of the index.html page, an error flagged up ([see here](assets/images/w3c-validator-aria-controls-error.png)) with the following message: "The aria-controls attribute must point to an element in the same document.". This was fixed by updating the aria-contols code from `aria-controls="navbarTogglerDemo01"` to `aria-controls="navbar-content"`.
 ---
 
 ## Deployment
