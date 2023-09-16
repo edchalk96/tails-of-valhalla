@@ -6,7 +6,7 @@
 
 [View the repository here](https://github.com/edchalk96/tails-of-valhalla)
 
-![Responsive website image](assets/images/amiresponsive_image.png)
+![Responsive website image](assets/images/amiresponsive-image.png)
 
 ## Table of Contents:
 1. [About the website](#about-the-website)
@@ -331,6 +331,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - During W3C validator testing of the index.html page, an error flagged up for an duplicated ID of `id="accordionExample"` in the *Our Services* section ([see here](assets/images/w3c-validator-duplicate-id.png)). This was fixed by renaming the first instance this ID appears to `id="accordionDogWalking"`.
 - During W3C validator testing of the index.html page, an error flagged up ([see here](assets/images/w3c-validator-button-p-error.png)) with the following message: "Element p not allowed as child of element button in this context. (Suppressing  further errors from this subtree.)". This was fixed by removing the paragraph element from the code, as well as the ID and respective CSS styling code.
 - During W3C validator testing of the index.html page, an error flagged up ([see here](assets/images/w3c-validator-aria-controls-error.png)) with the following message: "The aria-controls attribute must point to an element in the same document.". This was fixed by updating the aria-contols code from `aria-controls="navbarTogglerDemo01"` to `aria-controls="navbar-content"`.
+
 ---
 
 ## Deployment
