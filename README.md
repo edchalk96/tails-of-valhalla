@@ -264,7 +264,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ![Lighthouse testing, further analysis on home page](assets/images/lighthouse-test-home-analysis2.png) 
 ![Lighthouse testing, further analysis on home page](assets/images/lighthouse-test-home-analysis3.png)
 
-- As can be seen by the above images the performance parameter of the home page needed improvement. By looking depper into this and the analysis sections of the lighthous report, it could be seen that the image files associated with the home page were too large and needed compressing.
+- As can be seen by the above images the performance parameter of the home page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files associated with the home page were too large and needed compressing.
     - After the above amendment of compressing the image files, the performance paramter of the lighthouse report has improved, as can be seen below.
 
 2. **Book page**
@@ -326,11 +326,29 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 ### Known Bugs and Fixes
 - At exactly 992 pixels, when the navbar transitions from a full navbar to a hamburger menu, the navbar gets pushed below the header and in the CSS style of the hamburger menu items. No fix found for this as of yet so this is still to be fixed at a later date.
+
 - During W3C validator testing a warning was flagged up ([see here](assets/images/w3c-validator-warning.png)) with the following message: "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.". This is used in the comments when dividing the ocde into sections. In order to fix/remove this warning message, `<!------` was changed to `<!-- ===`, and in doing so the same structure of the sectioning remained. Credit to Harry Leepz's [Skihism Project Read.me file](https://github.com/Harry-Leepz/Sikhism-Project/blob/master/README.md) for for this fix.
+
 - During W3C validator testing of the index.html page, an error regarding the navbar logo image ([see here](assets/images/w3c-validator-navbar-logo-error.png)) was picked up with the following message: "Bad value 50px for attribute width on element img: Expected a digit but saw p instead." In order to fix this, "px" was removed from the code leaving the following code `width="50"`. This fix was implemented across all pages as the navbar is ever-present on the site.
-- During W3C validator testing of the index.html page, an error flagged up for an duplicated ID of `id="accordionExample"` in the *Our Services* section ([see here](assets/images/w3c-validator-duplicate-id.png)). This was fixed by renaming the first instance this ID appears to `id="accordionDogWalking"`.
+
+- During W3C validator testing of the index.html page, an error flagged up for an duplicated ID of `id="accordionExample"` in the *Our Services* section ([see here](assets/images/w3c-validator-duplicate-id.png)). This was fixed by renaming the first instance this ID appears to `id="accordionDogWalking"`. This error also occured during the testing for thecontact-us.html page, where `<id="message">` was used on two occasions. This was fixed by removing the first instance of this ID from the div it was contained within.
+
 - During W3C validator testing of the index.html page, an error flagged up ([see here](assets/images/w3c-validator-button-p-error.png)) with the following message: "Element p not allowed as child of element button in this context. (Suppressing  further errors from this subtree.)". This was fixed by removing the paragraph element from the code, as well as the ID and respective CSS styling code.
+
 - During W3C validator testing of the index.html page, an error flagged up ([see here](assets/images/w3c-validator-aria-controls-error.png)) with the following message: "The aria-controls attribute must point to an element in the same document.". This was fixed by updating the aria-contols code from `aria-controls="navbarTogglerDemo01"` to `aria-controls="navbar-content"`.
+
+- During W3C validator testing of the book.html page, two errors flagged up ([see here](assets/images/w3c-validator-input-type.png)) with the following messages: "Bad value textarea for attribute type on element input." and "Attribute placeholder is only allowed when the input type is email, number, password, search, tel, text, or url.". Both of these errors were fixed by amending the input type from `type="textarea"` to `type="text"`. This amendment was also implemented to the contact-us page which contained the same input type previsouly.
+
+- During W3C validator testing of the gallery.html page, an error flagged up multiple times ([see here](assets/images/w3c-validator-a-alt-attribute.png)) with the following message: "Attribute alt not allowed on element a at this point.". This was fixed by altering the attirbute from `alt` to `aria-label`, keeping the codes intended purpose of accessibility.
+
+- During W3C validator testing of the gallery.html page, an error flagged up multiple times ([see here](assets/images/w3c-validator-img-alt-attribute.png)) with the following message: "An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.". In order to fix this, the code for each image was looked at and an alt attriute was given to those where one was not present.
+
+- During W3C validator testing of the bristol-barkers-blog.html page, an error flagged ([see here](assets/images/w3c-validator-h6-error.png)) with the following message: "End tag h6 seen, but there were open elements.". This was caused by a `h4` element being closed by a `</h6>` and fixed by changing this to a `</h4>`. This was also flagged multiple times on the keeping-your-dog-cool-blog.html and prepare-frozen-kong-blog.html pages and was fixed the same way.
+
+- During W3C validator testing of the keeping-your-dog-cool-blog.html page, an error flagged multiple times ([see here](assets/images/w3c-validator-unicode-semicolon.png)) with the following message: "Character reference was not terminated by a semicolon.". This was caused by the html unicode characters not containing a semicolon at the end and hence fixed by adding this into the code on each occasion unicode characters were used.
+
+- During W3C validator testing of the keeping-your-dog-cool-blog.html page, an error flagged multiple times ([see here](assets/images/w3c-validator-&nbsp-semicolon.png)) with the following message: "Named character reference was not terminated by a semicolon.". This was caused by the `&nbsp` code not containing a semicolon at the end and hence fixed by adding this into the code on each occasion this was used.
+
 
 ---
 
@@ -367,33 +385,35 @@ Text here
 ## Credits
 
 ### Code
-- Text here
-    - Text here
-- Text here
-    - Text here
-- Text here
-    - Text here
+- [Stackoverflow](https://stackoverflow.com/)
+    - Used to find solutions and troubleshoot bugs and issues with the project code.
+- [Code Institue](https://codeinstitute.net/)
+    - Elements within the project taken from the courses example coding projects, such as the dark overlay code for the hero image.
+- [Bootstrap v5.3](https://getbootstrap.com/)
+    - This was used throughout the project as a framework library to assist in making the site responsive as well as other coding elements.
+- [W3 Schools](https://www.w3schools.com/)
+    - Used throughtout the project, and referenced therein, to assist with various coding elements.
+- [Epic Bootstrap](https://epicbootstrap.com/)
+    - Provided examples of certain page elements and provided links to see the code. This was used for the lightbox code in the gallery.html page.
 
 ### Content
-- Text here
-    - Text here
-- Text here
-    - Text here
-- Text here
-    - Text here
+- [Nord](https://www.nordtheme.com/)
+    - Used to find/take inspiration for the best colour scheme for the website.
+- [ChatGPT](https://chat.openai.com/)
+    - Used to generate/assist in the writing of large pieces of text content.
+- [1001 fonts](https://www.1001fonts.com/)
+    - Used to get access and download the **Norse** font imported into the project.
 
 ### Media 
-- Text here
-    - Text here
-- Text here
-    - Text here
-- Text here
-    - Text here
+- [Unsplash](https://unsplash.com/)
+    - Used for images throughout the project.
+- [Pixabay](https://pixabay.com/)
+    - Used for images throughout the project.
+- [CompressJPG](https://compressjpeg.com/)
+    - Used to compress large file size images to improve page performance
+- Some images were taken and created by the developer, including the company logo seen in the navbar.
 
 ### Acknowledgements
-- Text here
-    - Text here
-- Text here
-    - Text here
-- Text here
-    - Text here
+- Darío Carrasquel for support and feedback throughout the project.
+- Nigel Ewwards for his continous support and feedback throught the development of the project.
+- Tutor support at Code Institue for support during the development of the project.
