@@ -294,7 +294,7 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - As can be seen by the above images the performance and accessibility parameters of the gallery page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files linked within the page needed compressing to improve the performance. Further to this, alt attributes were missing from some of the images within the page and these have been added (see Known Bugs and Fixes for further details). Additionally, it can be seen that the social media icons, did not contain alternate text. Therefore an `aria-label` was added to each icon and this fix was applied to each page within the project.
     - After the above amendments, the performance and accessability paramters of the lighthouse report have improved, as can be seen below.
 
-    ![Lighthouse testing output from the sites home page](assets/images)
+    ![Lighthouse testing output from the sites home page](assets/images/final-lighthouse-test-gallery.png)
 
 4. **Blogs**
 
