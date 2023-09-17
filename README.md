@@ -435,6 +435,8 @@ Text here
     - Used to compress large file size images to improve page performance
 - [TinyPNG](https://tinypng.com/)
     - Used to compress the large images files linked to in the gallery page further.
+- Microsoft Photo Editor
+    - Used to resize and compress the large images files linked to in the gallery page further.
 - Some images were taken and created by the developer, including the company logo seen in the navbar.
 
 ### Acknowledgements
