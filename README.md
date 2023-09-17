@@ -349,6 +349,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ### Known Bugs and Fixes
 - At exactly 992 pixels, when the navbar transitions from a full navbar to a hamburger menu, the navbar gets pushed below the header and in the CSS style of the hamburger menu items. No fix found for this as of yet so this is still to be fixed at a later date.
 
+- When first implementing the opaque overlay over the hero image, this appeared over everything, including the header section. This was fixed by provising a z-index of 1+ to the elements that needed to appear above the overlay.
+
+- It was noticed that the footer was not appearing at the bottom of all pages, which was an issue for pages with smaller/shorter amounts of content in the body. This was fixed by implemeting the css styling of `flex-direction: column;` to the body. Credit to [30 seconds of code](https://www.30secondsofcode.org/css/s/footer-at-the-bottom/#:~:text=This%20is%20done%20by%20setting,it%20and%20its%20previous%20sibling) for this fix.
+
+- A further issue involving the footer appeared where on certain screen sizes, on the book page, the footer would overlap the content of the body. This was caused by a max-height being set to a div within the body and after its removal, the bug was fixed.
+
+- When selecting *Read More* on specific blogs within the blogs page, and having been navigated to the specific blog selected, the active page in the navbar would show as the **Contact us** page instead of the **Blogs** page. This was fixed by removing the `active` attirbute from the contact us navlink and adding it to the Blogs navlink.
+
 - During W3C validator testing a warning was flagged up ([see here](assets/images/w3c-validator-warning.png)) with the following message: "The document is not mappable to XML 1.0 due to two consecutive hyphens in a comment.". This is used in the comments when dividing the ocde into sections. In order to fix/remove this warning message, `<!------` was changed to `<!-- ===`, and in doing so the same structure of the sectioning remained. Credit to Harry Leepz's [Skihism Project Read.me file](https://github.com/Harry-Leepz/Sikhism-Project/blob/master/README.md) for for this fix.
 
 - During W3C validator testing of the index.html page, an error regarding the navbar logo image ([see here](assets/images/w3c-validator-navbar-logo-error.png)) was picked up with the following message: "Bad value 50px for attribute width on element img: Expected a digit but saw p instead." In order to fix this, "px" was removed from the code leaving the following code `width="50"`. This fix was implemented across all pages as the navbar is ever-present on the site.
