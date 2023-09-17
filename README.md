@@ -264,14 +264,14 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ![Lighthouse testing, further analysis on home page](assets/images/lighthouse-test-home-analysis2.png) 
 ![Lighthouse testing, further analysis on home page](assets/images/lighthouse-test-home-analysis3.png)
 
-- As can be seen by the above images the performance parameter of the home page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files associated with the home page were too large and needed compressing.
-    - After the above amendment of compressing the image files, the performance paramter of the lighthouse report has improved, as can be seen below.
+- As can be seen by the above images the performance parameter of the home page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files linked within the page needed compressing.
+    - After the above amendments of compressing the image files, the performance paramter of the lighthouse report has improved, as can be seen below.
 
 2. **Book page**
 
 ![Lighthouse testing output from the sites book page](assets/images/lighthouse-test-book.png)
 
-- As can be seen by the above image, all parameters tested are performing well for this page (all 90+/green) and therefore no amendments for this page were deemed necessary.
+- As can be seen by the above image, all parameters tested for the Book page are performing well for this page (all 90+/green) and therefore no amendments for this page were deemed necessary.
 
 3. **Gallery page**
 
@@ -280,49 +280,48 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 ![Lighthouse testing, further analysis on gallery page](assets/images/lighthouse-test-gallery-analysis2.png)
 ![Lighthouse testing, further analysis on gallery page](assets/images/lighthouse-test-gallery-analysis3.png)
 
-- As can be seen by the above images....
-    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+- As can be seen by the above images the performance and accessibility parameters of the gallery page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files linked within the page needed compressing to improve the performance. Further to this, alt attributes were missing from some of the images within the page and these have been added (see Known Bugs and Fixes for further details). Additionally, it can be seen that the social media icons, did not contain alternate text. Therefore an `aria-label` was added to each icon and this fix was applied to each page within the project.
+    - After the above amendments, the performance and accessability paramters of the lighthouse report have improved, as can be seen below.
 
 4. **Blogs**
 
 ![Lighthouse testing output from the sites blogs page](assets/images/lighthouse-test-blogs.png)
 ![Lighthouse testing, analysis on gallery page](assets/images/lighthouse-test-blogs-analysis.png)
 
-- As can be seen by the above images....
-    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+- As can be seen by the above images the performance parameter of the Blogs page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files linked within the page needed compressing.
+    - After the above amendments of compressing the image files, the performance paramter of the lighthouse report has improved, as can be seen below.
 
 5. **Bristol barkers blog page**
 
 ![Lighthouse testing output from the sites bristol barkers blog page](assets/images/lighthouse-test-bristol-barkers-blog.png)
 ![Lighthouse testing output from the sites bristol barkers blog page](assets/images/lighthouse-test-bristol-barkers-blog-analysis.png)
 
-- As can be seen by the above images....
-    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+- As can be seen by the above images the performance parameter of the Bristol barkers blog page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image file linked within the page needed compressing.
+    - After the above amendment of compressing the image file, the performance paramter of the lighthouse report has improved, as can be seen below.
 
 6. **Keeping your dog cool blog page**
 
 ![Lighthouse testing output from the sites keeping your dog cool blog page](assets/images/lighthouse-test-keeping-your-dog-cool-blog.png)
 ![Lighthouse testing output from the sites keeping your dog cool blog page](assets/images/lighthouse-test-keeping-your-dog-cool-blog-analysis.png)
 
-- As can be seen by the above images....
-    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+- As can be seen by the above images the performance parameter of the Keeping your dog cool blog page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image file linked within the page needed compressing.
+    - After the above amendment of compressing the image file, the performance paramter of the lighthouse report has improved, as can be seen below.
 
 7. **Prepare frozen kong blog page**
 
 ![Lighthouse testing output from the sites prepare frozen kong blog page](assets/images/lighthouse-test-prepare-frozen-kong-blog.png)
 ![Lighthouse testing output from the sites prepare frozen kong blog page](assets/images/lighthouse-test-prepare-frozen-kong-blog-analysis.png)
 
-- As can be seen by the above images....
-    - After the above amendments, the lighthouse testing has improved, as can be seen below.
+- As can be seen by the above images the performance parameter of the Prepare frozen kong blog page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image file linked within the page needed compressing.
+    - After the above amendment of compressing the image file, the performance paramter of the lighthouse report has improved, as can be seen below.
 
 8. **Contact us page**
 
 ![Lighthouse testing output from the sites contact us page](assets/images/lighthouse-test-contact-us.png)
 ![Lighthouse testing output from the sites contact us page](assets/images/lighthouse-test-contact-us-analysis.png)
 
-- As can be seen by the above images....
-    - After the above amendments, the lighthouse testing has improved, as can be seen below.
-
+- As can be seen by the above images the accessibility parameter of the Contact us page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the text area of the form contained a duplicate ID. This bug was fixed by removing the initial instance of the ID (see Known Bugs and Fixes for further details). 
+    - After the above amendments, the performance and accessability paramters of the lighthouse report have improved, as can be seen below.
 
 ### Known Bugs and Fixes
 - At exactly 992 pixels, when the navbar transitions from a full navbar to a hamburger menu, the navbar gets pushed below the header and in the CSS style of the hamburger menu items. No fix found for this as of yet so this is still to be fixed at a later date.
