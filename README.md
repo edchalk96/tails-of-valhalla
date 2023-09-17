@@ -197,7 +197,16 @@ The company logo, used in the navbar, was created by myself (author of website) 
 ## Testing
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-- [W3C Markup Validator](https://validator.w3.org/) - [Results]()
+- [W3C Markup Validator](https://validator.w3.org/)
+    - Home page - [Results](./assets/images/w3c-validator-home.png)
+    - Book page - [Results](./assets/images/w3c-validator-book.png)
+    - Gallery page - [Results](./assets/images/w3c-validator-gallery.png)
+    - Blogs page - [Results](./assets/images/w3c-validator-blogs.png)
+    - Bristol barkers blog page - [Results](./assets/images/w3c-validator-bristol-barkers-blog.png)
+    - Keeping your dog cool blog page - [Results](./assets/images/w3c-validator-keeping-your-dog-cool-blog.png)
+    - Prepare frozen kong blog page - [Results](./assets/images/w3c-validator-prepare-frozen-kong-blog.png)
+    - Contact Us - [Results](./assets/images/w3c-validator-contact-us.png)
+
 - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - [Results](./assets/images/w3c-css-validation.png)
 
 ### Testing User Stories from User Experience (UX) Section
@@ -266,6 +275,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - As can be seen by the above images the performance parameter of the home page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files linked within the page needed compressing.
     - After the above amendments of compressing the image files, the performance paramter of the lighthouse report has improved, as can be seen below.
+    
+    ![Lighthouse testing output from the sites home page](assets/images/final-lighthouse-test-home.png)
 
 2. **Book page**
 
@@ -283,6 +294,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - As can be seen by the above images the performance and accessibility parameters of the gallery page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files linked within the page needed compressing to improve the performance. Further to this, alt attributes were missing from some of the images within the page and these have been added (see Known Bugs and Fixes for further details). Additionally, it can be seen that the social media icons, did not contain alternate text. Therefore an `aria-label` was added to each icon and this fix was applied to each page within the project.
     - After the above amendments, the performance and accessability paramters of the lighthouse report have improved, as can be seen below.
 
+    ![Lighthouse testing output from the sites home page](assets/images)
+
 4. **Blogs**
 
 ![Lighthouse testing output from the sites blogs page](assets/images/lighthouse-test-blogs.png)
@@ -290,6 +303,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - As can be seen by the above images the performance parameter of the Blogs page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image files linked within the page needed compressing.
     - After the above amendments of compressing the image files, the performance paramter of the lighthouse report has improved, as can be seen below.
+
+    ![Lighthouse testing output from the sites home page](assets/images/final-lighthouse-test-blogs.png)
 
 5. **Bristol barkers blog page**
 
@@ -299,6 +314,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - As can be seen by the above images the performance parameter of the Bristol barkers blog page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image file linked within the page needed compressing.
     - After the above amendment of compressing the image file, the performance paramter of the lighthouse report has improved, as can be seen below.
 
+    ![Lighthouse testing output from the sites home page](assets/images/final-lighthouse-test-bristol-barkers-blog.png)
+
 6. **Keeping your dog cool blog page**
 
 ![Lighthouse testing output from the sites keeping your dog cool blog page](assets/images/lighthouse-test-keeping-your-dog-cool-blog.png)
@@ -306,6 +323,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - As can be seen by the above images the performance parameter of the Keeping your dog cool blog page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image file linked within the page needed compressing.
     - After the above amendment of compressing the image file, the performance paramter of the lighthouse report has improved, as can be seen below.
+
+    ![Lighthouse testing output from the sites home page](assets/images/final-lighthouse-test-keeping-your-dog-cool-blog.png)
 
 7. **Prepare frozen kong blog page**
 
@@ -315,6 +334,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 - As can be seen by the above images the performance parameter of the Prepare frozen kong blog page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the image file linked within the page needed compressing.
     - After the above amendment of compressing the image file, the performance paramter of the lighthouse report has improved, as can be seen below.
 
+    ![Lighthouse testing output from the sites home page](assets/images/final-lighthouse-test-prepare-frozen-kong-blog.png)
+
 8. **Contact us page**
 
 ![Lighthouse testing output from the sites contact us page](assets/images/lighthouse-test-contact-us.png)
@@ -322,6 +343,8 @@ The W3C Markup Validator and W3C CSS Validator Services were used to validate ev
 
 - As can be seen by the above images the accessibility parameter of the Contact us page needed improvement. By looking further into this in the analysis sections of the lighthous report, it could be seen that the text area of the form contained a duplicate ID. This bug was fixed by removing the initial instance of the ID (see Known Bugs and Fixes for further details). 
     - After the above amendments, the performance and accessability paramters of the lighthouse report have improved, as can be seen below.
+
+    ![Lighthouse testing output from the sites home page](assets/images/final-lighthouse-test-contact-us.png)
 
 ### Known Bugs and Fixes
 - At exactly 992 pixels, when the navbar transitions from a full navbar to a hamburger menu, the navbar gets pushed below the header and in the CSS style of the hamburger menu items. No fix found for this as of yet so this is still to be fixed at a later date.
@@ -410,6 +433,8 @@ Text here
     - Used for images throughout the project.
 - [CompressJPG](https://compressjpeg.com/)
     - Used to compress large file size images to improve page performance
+- [TinyPNG](https://tinypng.com/)
+    - Used to compress the large images files linked to in the gallery page further.
 - Some images were taken and created by the developer, including the company logo seen in the navbar.
 
 ### Acknowledgements
